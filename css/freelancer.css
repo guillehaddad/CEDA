@@ -395,6 +395,14 @@ footer .footer-below {
     background-color: darkblue;
 }
 
+.btn {
+  background: #1825BC;
+  border-color: rgba(4, 19, 90, 0.71);
+}
+.btn:hover {
+  background: rgba(4, 19, 90, 0.71);
+}
+
 .btn-social {
     display: inline-block;
     width: 50px;
