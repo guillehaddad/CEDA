@@ -216,37 +216,37 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                    <form name="sentMessage" name="contactForm" novalidate>
+                    <form name="sentMessage" id="contactForm" action='' novalidate>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Nome</label>
-                                <input type="text" class="form-control" placeholder="Nome" name="name" required data-validation-required-message="Por favor digite seu Nome.">
+                                <input type="text" name="name" class="form-control" placeholder="Nome" required data-validation-required-message="Por favor digite seu Nome.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Email</label>
-                                <input type="email" class="form-control" placeholder="Email" name="email" required data-validation-required-message="Por favor digite seu Email.">
+                                <input type="email" name="email" class="form-control" placeholder="Email" required data-validation-required-message="Por favor digite seu Email.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Telefone</label>
-                                <input type="tel" class="form-control" placeholder="Telefone" name="phone" required data-validation-required-message="Por favor digite seu Telefone.">
+                                <input type="tel" name="phone" class="form-control" placeholder="Telefone" required data-validation-required-message="Por favor digite seu Telefone.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Mensagem</label>
-                                <textarea rows="5" class="form-control" placeholder="Mensagem" name="message" required data-validation-required-message="Por favor digite sua Mensagem."></textarea>
+                                <textarea rows="5" type='text' name="message" class="form-control" placeholder="Mensagem" required data-validation-required-message="Por favor digite sua Mensagem."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <br>
-                        <div name="success"></div>
+                        <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
                                 <button type="submit" class="btn btn-success btn-lg">Enviar</button>
@@ -312,16 +312,18 @@
         <div class="footer-above">
             <div class="container">
                 <div class="row">
-                    <div class="footer-col col-md-3"></div>
-                    <div class="footer-col col-md-6">
-                        <h3>A CEDA nas redes sociais</h3>
+                    <div class="footer-col col-md-12">
                           <ul class="list-inline">
-                            <li>
-                                <a href="https://www.facebook.com/CEDA-Centro-Especializado-em-Dist%C3%83%C2%BArbios-de-Aprendizagem-1464810583816438/" target='_blank' class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="http://www.cedaeducacao.wordpress.com" target='_blank' class="btn-social btn-outline"><i class="fa fa-fw fa-wordpress"></i></a>
-                            </li>
+                            <div class="footer-col col-md-6">
+                              <li><h3>Curta nossa página</h3>
+                                  <a href="https://www.facebook.com/CEDA-Centro-Especializado-em-Dist%C3%83%C2%BArbios-de-Aprendizagem-1464810583816438/" target='_blank' class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                              </li>
+                            </div>
+                            <div class="footer-col col-md-6">
+                              <li><h3>Siga nossas publicações</h3>
+                                  <a href="http://www.cedaeducacao.wordpress.com" target='_blank' class="btn-social btn-outline"><i class="fa fa-fw fa-wordpress"></i></a>
+                              </li>
+                            </div>
                             <!--
                             <li>
                                 <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
