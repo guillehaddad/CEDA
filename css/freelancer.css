@@ -78,12 +78,18 @@ hr.star-primary {
 
 #contact hr.star-primary,
 #contact hr.star-primary::after {
-    border-color: #fff;
-    color: #fff;
+    border-color: #2C3E50;
+    color: #2C3E50;
 }
 
 #team hr.star-primary,
 #team hr.star-primary::after {
+    border-color: #fff;
+    color: #fff;
+}
+
+#map hr.star-primary,
+#map hr.star-primary::after {
     border-color: #fff;
     color: #fff;
 }
