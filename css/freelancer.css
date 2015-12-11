@@ -82,6 +82,12 @@ hr.star-primary {
     color: #fff;
 }
 
+#team hr.star-primary,
+#team hr.star-primary::after {
+    border-color: #fff;
+    color: #fff;
+}
+
 
 hr.star-primary:after {
     color: #2c3e50;
@@ -223,8 +229,13 @@ section.success {
     background: #005F33;
 }
 
-#contact{
+#team{
   background: #8B1A72;
+  color: #fff;
+}
+
+#map{
+  background: darkblue;
   color: #fff;
 }
 
@@ -347,7 +358,7 @@ section.success a.active {
     border: 0;
     border-radius: 0;
     font-size: 1.5em;
-    background: 0 0;
+    background: 0 0; class='small'
     box-shadow: none!important;
     resize: none;
 }
@@ -397,7 +408,7 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 25px;
-    background-color: #00639A;
+    background-color: #8B1A72;
 }
 
 footer .footer-col {
@@ -406,8 +417,13 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: darkblue;
+    background-color: #E87314;
 }
+
+footer .footer-below ul{
+  display:inline
+}
+
 
 .btn {
   background: #1825BC;
